@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  --background: #efefef;
+  --foreground: #000000;
+  --muted: #e3e3e3;
+  --muted-foreground: #606060;
+  --secondary: #262626;
+  --accent: #fb6400;
+  --accent-soft: #fc8434;
+  --accent-pale: #fcc494;
+  --white: #ffffff;
+  --border: #ecefec;
+  --destructive: #dc2626;
+
+  --shadow-card: rgba(0, 0, 0, 0.03) 2px 5px 11px 0px, rgba(0, 0, 0, 0.03) 0px 19px 21px 0px, rgba(0, 0, 0, 0.02) 16px 44px 28px 0px;
+  --shadow-cta: 0px 10px 30px rgba(251, 100, 0, 0.25);
+
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-wrap: anywhere;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fluid Typography Classes */
+.font-display {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(2.25rem, 7.5vw, 5.75rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+}
+
+.font-headline-lg {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(2.25rem, 5.5vw, 4.4375rem);
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.font-headline-md {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(1.75rem, 4.2vw, 3.375rem);
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.font-headline-service {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.15;
+  font-weight: 400;
+}
+
+.font-body-lg {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(1.25rem, 2.2vw, 2rem);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.font-body {
+  font-family: 'Archivo', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.font-small {
+  font-family: 'Archivo', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.font-caption {
+  font-family: 'Archivo', sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Card & Button Tokens */
+.card-base {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  border-radius: 9999px;
+  background-color: var(--accent);
+  color: #000000;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0 32px;
+  box-shadow: var(--shadow-cta);
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-soft);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  border-radius: 9999px;
+  background-color: var(--secondary);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0 32px;
+  transition: opacity 0.15s ease;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
